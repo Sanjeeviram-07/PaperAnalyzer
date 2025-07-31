@@ -7,7 +7,7 @@ A comprehensive research paper analysis and synthesis platform that combines mul
 
 ---
 
-## 📸 Screenshots
+## Screenshots
 
 | Upload | Cross-Paper Synthesis |
 |------------------|------------------------|
@@ -17,7 +17,7 @@ A comprehensive research paper analysis and synthesis platform that combines mul
 |------------------|------------------|
 | ![screenshot3](D:\PaperAnalyzer\Summary.png) | ![screenshot4](D:\PaperAnalyzer\Citation.png) |
 
-## 🚀 Features
+## Features
 
 - **Multi-Agent Paper Processing**: Specialized agents for parsing, classification, summarization, and synthesis
 - **Cross-Paper Synthesis**: Advanced analysis across multiple research papers
@@ -28,7 +28,7 @@ A comprehensive research paper analysis and synthesis platform that combines mul
 - **Modern UI**: Responsive React frontend with Tailwind CSS
 - **Real-time Processing**: Live analysis with progress indicators
 
-## 🏗️ System Architecture
+## Architecture
 
 ### High-Level Overview
 
@@ -67,7 +67,7 @@ A comprehensive research paper analysis and synthesis platform that combines mul
 - **Audio Agent**: Text-to-speech generation
 - **Search Agent**: Paper discovery via arXiv and Semantic Scholar APIs
 
-## 🤖 Multi-Agent Design & Coordination
+## Multi-Agent Design & Coordination
 
 ### Agent Architecture
 
@@ -223,7 +223,7 @@ def extract_key_insights(text: str) -> List[str]:
     # Extract matches and return top insights
 ```
 
-## 🔊 Audio Generation Implementation
+##  Audio Generation Implementation
 
 ### Text-to-Speech Pipeline
 
@@ -336,7 +336,7 @@ Once the backend is running, access the interactive API documentation:
 http://localhost:8000/docs
 ```
 
-## 📁 Project Structure
+##  Project Structure
 
 ```
 Research/
@@ -372,12 +372,6 @@ Research/
 └── README.md                       # This file
 ```
 
-## 🔧 Configuration
-
-### Environment Variables
-
-
-
 ### API Endpoints
 
 | Endpoint | Method | Description |
@@ -389,7 +383,7 @@ Research/
 | `/synthesize-papers/` | POST | Generate cross-paper synthesis |
 | `/health` | GET | Health check endpoint |
 
-## 🚧 Limitations
+## Limitations
 
 ### Current Limitations
 
@@ -407,7 +401,7 @@ Research/
 3. **File Storage**: Local storage only (no cloud backup)
 4. **Audio Storage**: Temporary storage, files may be cleaned up
 
-## 🔮 Future Improvements
+## Future Improvements
 
 ### Planned Enhancements
 
@@ -448,7 +442,7 @@ Research/
 3. **Automated Review**: Pattern-based paper review generation
 4. **Trend Analysis**: Research trend prediction and analysis
 
-## 🤝 Contributing
+## Contributing
 
 ### Development Setup
 
@@ -465,11 +459,11 @@ Research/
 - **React**: Functional components with hooks
 - **Documentation**: Comprehensive docstrings and comments
 
-## 📄 License
+## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## 🙏 Acknowledgments
+## Acknowledgments
 
 - **Google TTS**: For text-to-speech capabilities
 - **arXiv API**: For free paper discovery and access
@@ -478,7 +472,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - **React**: For frontend framework
 - **Tailwind CSS**: For utility-first CSS framework
 
-## 📞 Support
+## Support
 
 For questions, issues, or contributions:
 
@@ -488,4 +482,4 @@ For questions, issues, or contributions:
 
 ---
 
-**Built with ❤️ for the research community** 
+**Built for the research community** 
