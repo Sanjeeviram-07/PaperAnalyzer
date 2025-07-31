@@ -9,13 +9,8 @@ A comprehensive research paper analysis and synthesis platform that combines mul
 
 ## Screenshots
 
-| Upload | Cross-Paper Synthesis |
-|------------------|------------------------|
-| ![Pdf Upload](PaperAnalyzer\Pdf.png) | ![Crosspaper Analysis](PaperAnalyzer\Cross_paper_analysis.png) |
-
-| Audio Narration & Summary | Citation |
-|------------------|------------------|
-| ![Summary](PaperAnalyzer\Summary.png) | ![Cictation](PaperAnalyzer\Citation.png) |
+(PaperAnalyzer\Pdf.png) | (PaperAnalyzer\Cross_paper_analysis.png) |
+(PaperAnalyzer\Summary.png) | (PaperAnalyzer\Citation.png) |
 
 ## Features
 
