@@ -116,7 +116,7 @@ def process_paper(file: UploadFile, topics: str):
     }
 ```
 
-## 📄 Paper Processing Methodology
+## Paper Processing Methodology
 
 ### Processing Pipeline
 
@@ -258,7 +258,7 @@ def generate_audio(text: str) -> str:
 - **Download Support**: Direct audio file downloads
 - **Progress Tracking**: Real-time generation status
 
-## 🛠️ Setup Instructions
+## Setup Instructions
 
 ### Prerequisites
 
