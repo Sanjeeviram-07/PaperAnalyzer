@@ -1,0 +1,163 @@
+/* Tailwind CSS directives - These are valid PostCSS directives */
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+/* Base styles */
+@layer base {
+  html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+      'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+      sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  #root {
+    min-height: 100vh;
+  }
+
+  /* Dropdown styling */
+  select {
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(4px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 0.75rem;
+    color: white;
+    padding: 0.75rem 1rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    transition: all 0.2s;
+    cursor: pointer;
+    appearance: none;
+    position: relative;
+    z-index: 10;
+  }
+
+  select:focus {
+    outline: none;
+    border-color: #2dd4bf;
+    box-shadow: 0 0 0 2px rgba(45, 212, 191, 0.2);
+  }
+
+  select option {
+    background-color: #6b21a8;
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    outline: none;
+  }
+
+  select option:hover {
+    background-color: #7c3aed;
+  }
+
+  select option:checked {
+    background-color: #14b8a6;
+  }
+}
+
+/* Custom utilities */
+@layer utilities {
+  /* Line clamp utilities with standard and webkit properties for maximum compatibility */
+  
+  .line-clamp-1 {
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  
+  .line-clamp-2 {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  
+  .line-clamp-3 {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  
+  .line-clamp-4 {
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  
+  .line-clamp-5 {
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    line-clamp: 5;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  
+  .line-clamp-6 {
+    display: -webkit-box;
+    -webkit-line-clamp: 6;
+    line-clamp: 6;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  
+  /* Standard line-clamp property support for modern browsers */
+  @supports (line-clamp: 1) {
+    .line-clamp-1,
+    .line-clamp-2,
+    .line-clamp-3,
+    .line-clamp-4,
+    .line-clamp-5,
+    .line-clamp-6 {
+      display: block;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+  }
+  
+  /* Fallback for browsers that don't support line-clamp or -webkit-line-clamp */
+  @supports not (line-clamp: 1) {
+    @supports not (-webkit-line-clamp: 1) {
+      .line-clamp-1,
+      .line-clamp-2,
+      .line-clamp-3,
+      .line-clamp-4,
+      .line-clamp-5,
+      .line-clamp-6 {
+        display: block;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
+    }
+  }
+  
+  /* Additional text truncation utilities */
+  .text-truncate {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  
+  .text-ellipsis {
+    text-overflow: ellipsis;
+  }
+} 
