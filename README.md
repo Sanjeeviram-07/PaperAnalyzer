@@ -7,14 +7,6 @@ A comprehensive research paper analysis and synthesis platform that combines mul
 
 ---
 
-### 📸 Screenshots
-
-![PDF View](PaperAnalyzer/Pdf.png) |
-![Cross Paper Analysis](PaperAnalyzer/Cross_paper_analysis.png) |
-![Summary](PaperAnalyzer/Summary.png) |
-![Citation](PaperAnalyzer/Citation.png)
-
-
 ## Features
 
 - **Multi-Agent Paper Processing**: Specialized agents for parsing, classification, summarization, and synthesis
@@ -459,7 +451,7 @@ Research/
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License 
 
 ## Acknowledgments
 
