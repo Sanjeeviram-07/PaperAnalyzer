@@ -1,0 +1,22 @@
+services:
+  # -------------------
+  - type: web
+    name: backend
+    env: python
+    rootDirectory: ./backend
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn main:app --host 0.0.0.0 --port $PORT
+    healthCheckPath: /
+    autoDeploy: true
+    plan: free
+
+
+  # -------------------
+  - type: static
+    name: frontend
+    rootDirectory: ./frontend
+    buildCommand: npm install && npm run build
+    staticPublishPath: build
+    envVars:
+      - key: REACT_APP_API_URL
+        value: https://backend.onrender.com   # 👈 auto-injected backend URL
