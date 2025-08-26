@@ -3,9 +3,8 @@ services:
   - type: web
     name: backend
     env: python
-    rootDirectory: ./backend
-    buildCommand: pip install -r requirements.txt
-    startCommand: uvicorn main:app --host 0.0.0.0 --port $PORT
+    buildCommand: cd backend && pip install -r requirements.txt
+    startCommand: cd backend && uvicorn main:app --host 0.0.0.0 --port $PORT
     healthCheckPath: /
     autoDeploy: true
     plan: free
@@ -14,11 +13,10 @@ services:
   - type: web
     name: frontend
     env: node
-    rootDirectory: ./frontend
-    buildCommand: npm install && npm run build
-    startCommand: npx serve -s build -l $PORT
+    buildCommand: cd frontend && npm install && npm run build
+    startCommand: cd frontend && npx serve -s build -l $PORT
     autoDeploy: true
     plan: free
     envVars:
       - key: REACT_APP_API_URL
-        value: https://backend.onrender.com   # 👈 replace with your real backend URL after first deploy
+        value: https://backend.onrender.com   # 👈 replace after first backend deploy
