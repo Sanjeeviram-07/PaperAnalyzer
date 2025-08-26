@@ -15,7 +15,10 @@ from datetime import datetime
 import re
 
 app = FastAPI(title="Research Summarization API", version="1.0.0")
-
+origins = [
+    "http://localhost:3000",                # React local dev
+    "https://paperanalyzer.onrender.com",   # deployed React on Render
+]
 # Add CORS middleware
 app.add_middleware(
     CORSMiddleware,
